@@ -1,0 +1,14 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Run tests when domain logic changes",
+      "trigger": "PostFileSave",
+      "matcher": "src/lib/.*\\.js$",
+      "action": {
+        "type": "command",
+        "command": "npm test"
+      }
+    }
+  ]
+}

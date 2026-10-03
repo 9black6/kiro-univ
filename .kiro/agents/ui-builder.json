@@ -1,0 +1,20 @@
+{
+  "name": "ui-builder",
+  "description": "React コンポーネント（src/components/）の実装に特化したエージェント。アクセシビリティと既存のスタイル規約に沿った UI を作ることを得意とする。",
+  "tools": ["read", "write", "shell"],
+  "includeMcpJson": false,
+  "includePowers": false,
+  "resources": [
+    "file://.kiro/steering/structure.md",
+    "file://.kiro/steering/conventions.md",
+    "file://src/index.css"
+  ],
+  "permissions": {
+    "rules": [
+      { "capability": "shell", "match": ["npm run build", "npm run dev"], "effect": "allow" }
+    ]
+  },
+  "prompt": "あなたは AWS 資格学習プランナーの UI 担当エンジニアです。src/components/ 配下の React コンポーネントを実装します。1 ファイル 1 コンポーネントを基本とし、ロジックは src/lib/ の関数を呼び出して UI から計算を書かないこと。状態更新はイミュータブルに行い、副作用は useEffect に閉じ込めます。label と input を関連付け、aria 属性を付けるなどアクセシビリティに配慮してください。コメントは日本語で書きます。",
+  "model": "claude-sonnet-4.5",
+  "welcomeMessage": "UI 担当です。どのコンポーネントを作りますか？"
+}

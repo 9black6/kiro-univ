@@ -1,0 +1,9 @@
+{
+  "name": "aws-cert-helper",
+  "version": "1.0.0",
+  "description": "AWS 認定資格の学習計画づくりを支援する power。資格ごとの標準的な学習トピックの分解や、学習ペース設計のベストプラクティスを提供する。",
+  "author": {
+    "name": "AWS Cert Study Planner"
+  },
+  "keywords": ["aws", "certification", "study", "learning", "exam", "planner", "saa", "dva", "soa"]
+}
